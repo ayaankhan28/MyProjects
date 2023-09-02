@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: "Poppins",sans-serif;
+    color: white;
+    margin-right: 10px;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#081b29 ;
+}
+
+/*body{
+    background-image:url("scaler.jpg");
+    background-size: cover;
+      
+    
+}*/
+body {
+    position: relative; /* Make sure the body is positioned relatively for the pseudo-element */
+}
+
+body::before {
+    content: "";
+    background-image: url("scaler.jpg");
+    background-size:auto;
+    background-position:top;
+    opacity: 0.1; /* Adjust the opacity value as desired */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+    background-color: transparent;/*rgb(156, 212, 193)*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: antiquewhite;
+    text-decoration:none;
+    font-weight: 600;/*for boldness*/
+}
+.navbar a{
+    font-size: 18px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover{/*,
+    .navbar a.active*/
+    color: rgb(156, 212, 193);
+    
+
+}
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    /*margin-left: 10%;
+    margin-top: 20%;*/
+}
+
+.home-cont h1{
+    font-size: 56px;
+    font-weight: 700;
+    
+    height: 40px;
+}
+.home-cont p{
+    font-size: 20px;
+    margin: 40px 0 20px;
+}
+
+.home-cont h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(156, 212, 193);
+    height: 10px;
+}
+
+.home-cont .btn-box{
+    /*background-color: aqua;*/
+    width: 345px;
+    height: 50px;
+    
+
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background-color: aquamarine;
+    border: 2px solid aquamarine;
+    font-size: 19px;
+    border-radius: 8px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+    
+.btn-box a{
+    background: transparent;
+    color:aquamarine;
+   
+
+}
+
+    
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: aquamarine;
+    z-index:-1 ;
+    transition: 0.5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+    
+}
+
+.btn-box a:hover{
+    color: #081b29;
+    
+}
+
+.soci-acc{
+    position: absolute;
+    top: 600px;
+    /*bottom: 10px;*/
+    width: 170px;
+    font-size: 30px;
+    height: 50px;
+    
+    
+}
+.soci-acc a:nth-child(4){
+    font-size: 20px;
+}
+
+.ima{
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    border-radius: 30px;
+}
+
+.about{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    /*margin-left: 10%;
+    margin-top: 20%;*/
+}
+
+.about-cont h1{/*https://www.nasa.gov/sites/default/files/styles/full_width_
+    feature/public/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg*/
+    font-size: 100px;
+    font-weight: 700;
+    
+    height: 100px;
+}
+.about-cont p{
+    font-size: 20px;
+    margin: 40px 0 20px ;
+    
+    
+}
+
+.edu{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    /*margin-left: 10%;
+    margin-top: 20%;*/
+}
+
+.edu-cont h1{
+    font-size: 100px;
+    font-weight: 700;
+    height: 100px;
+}
+.edu-cont p{
+    font-size: 20px;
+    margin: 40px 0 20px ;
+    
+    
+}
+iframe{
+    position: relative;
+    margin-left:30%;
+    
+}
+.port{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    /*margin-left: 10%;
+    margin-top: 20%;*/
+}
+
+.port h1{
+    font-size: 100px;
+    font-weight: 700;
+    height: 100px;
+}
+
+.box{
+    
+    background-color: transparent;
+    padding: 30px;
+    border: 2px solid rgba(40,150, 0,0.2);
+    box-shadow: 0 6px 10px rgba(0,0, 0,0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(25px);
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    color: lightgreen;
+    
+}
+
+.box{
+    position: relative;
+    margin-left:30%;
+}
+.box li{
+    font-size: 20px;
+}
